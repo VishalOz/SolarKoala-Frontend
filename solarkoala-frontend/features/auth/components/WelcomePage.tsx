@@ -1,3 +1,10 @@
+/* 
+Author: Dinura Sasmitha
+Created: 2026-01-19 DS0043 Welcome Screen UI
+Description: Implements the Welcome Screen Layout and navigation logic 
+Last Update: 2026-01- DS0043 Initial implementation
+*/
+
 import React from 'react';
 import {
   View,
@@ -35,7 +42,7 @@ export const WelcomePage = () => {
 
         {/* Logo */}
         <Image
-          source={require('../../../public/assets/light.png')}
+          source={require('../../../public/assets/Logo.png')}
           style={styles.logo}
           resizeMode="contain"
         />
