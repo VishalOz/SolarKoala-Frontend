@@ -1,5 +1,5 @@
-import { WelcomePage } from '@/features/auth';
+import { MultiSignupPage } from '@/features/auth';
 
 export default function HomeScreen() {
-  return <WelcomePage />;
+  return <MultiSignupPage />;
 }
