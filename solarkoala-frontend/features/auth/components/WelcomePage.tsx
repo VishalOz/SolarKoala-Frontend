@@ -7,10 +7,13 @@ import {
   TouchableOpacity,
   SafeAreaView,
 } from 'react-native';
+import { useRouter } from 'expo-router';
 
 export const WelcomePage = () => {
+  const router = useRouter();
   const handleGetStarted = () => {
     // Navigate to sign up or onboarding
+    router.push('/tour');
   };
 
   const handleSignIn = () => {
