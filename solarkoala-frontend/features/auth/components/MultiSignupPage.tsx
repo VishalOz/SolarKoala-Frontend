@@ -30,22 +30,6 @@ export const MultiSignupPage = () => {
 
     return (
         <SafeAreaView style={styles.container}>
-            {/* Time and Status Bar Placeholder - Usually handled by system but shown in mockup */}
-            <View style={styles.statusBarPlaceholder}>
-                <Text style={styles.timeText}>9:41</Text>
-                <View style={styles.statusIcons}>
-                    <Ionicons name="cellular" size={16} color="black" />
-                    <Ionicons name="wifi" size={16} color="black" style={{ marginHorizontal: 4 }} />
-                    <Ionicons name="battery-full" size={20} color="black" />
-                </View>
-            </View>
-
-            <View style={styles.header}>
-                <TouchableOpacity style={styles.menuButton}>
-                    <Ionicons name="menu-outline" size={32} color="#11181C" />
-                </TouchableOpacity>
-            </View>
-
             <View style={styles.content}>
                 {/* Koala Image */}
                 <Image
@@ -103,41 +87,18 @@ export const MultiSignupPage = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#FAF9F6', // Subtle off-white background as seen in gradient
-    },
-    statusBarPlaceholder: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        paddingHorizontal: 32,
-        paddingTop: 10,
-        alignItems: 'center',
-    },
-    timeText: {
-        fontSize: 16,
-        fontWeight: '600',
-    },
-    statusIcons: {
-        flexDirection: 'row',
-        alignItems: 'center',
-    },
-    header: {
-        paddingHorizontal: 24,
-        paddingTop: 10,
-        alignItems: 'flex-end',
-    },
-    menuButton: {
-        padding: 8,
+        backgroundColor: '#FAF9F6',
     },
     content: {
         flex: 1,
         alignItems: 'center',
         paddingHorizontal: 40,
         paddingBottom: 40,
+        justifyContent: 'center', // Center content vertically now that header is gone
     },
     koalaImage: {
         width: width * 0.75,
         height: height * 0.35,
-        marginTop: 20,
         marginBottom: 40,
     },
     titleSection: {
@@ -146,7 +107,7 @@ const styles = StyleSheet.create({
     },
     titleText: {
         fontSize: 34,
-        fontWeight: '800', // Heavy bold in mockup
+        fontWeight: '800',
         color: '#0D1E2D',
         letterSpacing: -0.5,
     },
@@ -182,15 +143,13 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: '#E8EAED',
         borderRadius: 12,
-        height: 64, // Increased height for touch interaction
+        height: 64,
         justifyContent: 'center',
         width: '100%',
-        // Shadow for iOS
         shadowColor: '#000',
         shadowOffset: { width: 0, height: 2 },
         shadowOpacity: 0.03,
         shadowRadius: 10,
-        // Elevation for Android
         elevation: 1,
     },
     buttonContent: {
