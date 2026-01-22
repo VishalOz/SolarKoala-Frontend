@@ -1,5 +1,5 @@
-import { MultiSignupPage } from '@/features/auth';
+import DashboardScreen from '../../features/dashboard/DashboardScreen';
 
 export default function HomeScreen() {
-  return <MultiSignupPage />;
+  return <DashboardScreen />;
 }
