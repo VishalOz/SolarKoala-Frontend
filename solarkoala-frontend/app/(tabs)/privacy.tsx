@@ -5,34 +5,15 @@ Description: Placeholder screen for Privacy settings
 Last Update: Imandi Vidara - 2026-01-19 - SK005 - Initial creation of privacy screen
 */
 
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text } from "react-native";
 
-export default function AccountScreen() {
+export default function PrivacyScreen() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Account</Text>
-      <Text style={styles.text}>Coming soon </Text>
+    <View className="flex-1 justify-center items-center bg-black">
+      <Text className="text-2xl font-bold text-white mb-2.5">Privacy</Text>
+      <Text className="text-base text-white">Coming soon </Text>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#000",
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: "bold",
-    color: "white",
-    marginBottom: 10,
-  },
-  text: {
-    fontSize: 16,
-    color: "white",
-  },
-});
 
 

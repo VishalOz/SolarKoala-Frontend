@@ -9,17 +9,15 @@ import React from 'react';
 import {
   View,
   Text,
-  StyleSheet,
-  Image,
   TouchableOpacity,
   SafeAreaView,
 } from 'react-native';
 import { useRouter } from 'expo-router';
+import { Image } from 'expo-image';
 
 export const WelcomePage = () => {
   const router = useRouter();
   const handleGetStarted = () => {
-    // Navigate to sign up or onboarding
     router.push('/tour');
   };
 
@@ -28,120 +26,46 @@ export const WelcomePage = () => {
   };
 
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.content}>
+    <SafeAreaView className="flex-1 bg-white">
+      <View className="flex-1 items-center justify-center px-6">
         {/* Welcome Title */}
-        <View style={styles.titleContainer}>
-          <Text style={styles.welcomeText}>Welcome to Solar </Text>
-          <View style={styles.koalaBox}>
-            <Text style={styles.koalaText}>Koala</Text>
+        <View className="flex-row items-center flex-wrap justify-center mb-4">
+          <Text className="text-[28px] font-semibold text-[#11181C]">Welcome to Solar </Text>
+          <View className="bg-black px-3 py-1.5 rounded-full">
+            <Text className="text-[28px] font-semibold text-white">Koala</Text>
           </View>
         </View>
 
         {/* Tagline */}
-        <Text style={styles.tagline}>
+        <Text className="text-base text-[#687076] text-center mb-10 leading-6">
           Your intelligent solar partner for a brighter tomorrow
         </Text>
 
         {/* Logo */}
         <Image
           source={require('../../../public/assets/Logo.png')}
-          style={styles.logo}
-          resizeMode="contain"
+          className="w-[200px] h-[200px] mb-12 border-2 border-white"
+          contentFit="contain"
         />
 
         {/* Get Started Button */}
-        <TouchableOpacity style={styles.getStartedButton} onPress={handleGetStarted}>
-          <Text style={styles.getStartedText}>Get Started</Text>
+        <TouchableOpacity 
+          className="bg-black py-4 px-12 rounded-full w-full items-center mb-6" 
+          onPress={handleGetStarted}
+        >
+          <Text className="text-white text-lg font-semibold">Get Started</Text>
         </TouchableOpacity>
 
         {/* Sign In Link */}
-        <View style={styles.signInContainer}>
-          <Text style={styles.signInText}>Already have an account? </Text>
+        <View className="flex-row items-center">
+          <Text className="text-sm text-[#687076]">Already have an account? </Text>
           <TouchableOpacity onPress={handleSignIn}>
-            <Text style={styles.signInLink}>Sign In</Text>
+            <Text className="text-sm text-[#0a7ea4] font-semibold">Sign In</Text>
           </TouchableOpacity>
         </View>
       </View>
     </SafeAreaView>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-  },
-  content: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingHorizontal: 24,
-  },
-  titleContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
-    marginBottom: 16,
-  },
-  welcomeText: {
-    fontSize: 28,
-    fontWeight: '600',
-    color: '#11181C',
-  },
-  koalaBox: {
-    backgroundColor: '#000',
-    paddingHorizontal: 12,
-    paddingVertical: 6,
-    borderRadius: 50,
-  },
-  koalaText: {
-    fontSize: 28,
-    fontWeight: '600',
-    color: '#fff',
-  },
-  tagline: {
-    fontSize: 16,
-    color: '#687076',
-    textAlign: 'center',
-    marginBottom: 40,
-    lineHeight: 24,
-  },
-  logo: {
-    width: 200,
-    height: 200,
-    marginBottom: 48,
-    borderWidth: 2,
-    borderColor: '#fff',
-  },
-  getStartedButton: {
-    backgroundColor: 'black',
-    paddingVertical: 16,
-    paddingHorizontal: 48,
-    borderRadius: 50,
-    width: '100%',
-    alignItems: 'center',
-    marginBottom: 24,
-  },
-  getStartedText: {
-    color: '#fff',
-    fontSize: 18,
-    fontWeight: '600',
-  },
-  signInContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  signInText: {
-    fontSize: 14,
-    color: '#687076',
-  },
-  signInLink: {
-    fontSize: 14,
-    color: '#0a7ea4',
-    fontWeight: '600',
-  },
-});
 
 export default WelcomePage;
