@@ -5,7 +5,7 @@ Description: Placeholder screen for Notifications settings
 Last Update: Imandi Vidara - 2026-01-19 - SK005 - Initial creation of notifications screen
 */
 
-import { View, Text } from "react-native";
+/*import { View, Text } from "react-native";
 
 export default function NotificationsScreen() {
   return (
@@ -15,4 +15,4 @@ export default function NotificationsScreen() {
     </View>
   );
 }
-
+*/

@@ -5,7 +5,7 @@ Description: Placeholder screen for Privacy settings
 Last Update: Imandi Vidara - 2026-01-19 - SK005 - Initial creation of privacy screen
 */
 
-import { View, Text } from "react-native";
+/*import { View, Text } from "react-native";
 
 export default function PrivacyScreen() {
   return (
@@ -15,5 +15,5 @@ export default function PrivacyScreen() {
     </View>
   );
 }
-
+*/
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+/*import React, { useState } from 'react';
 import { View, Text } from 'react-native';
 import { useRouter } from 'expo-router';
 import { TourScreen } from '../components/TourScreen';
@@ -113,3 +113,4 @@ export default function TourFlow() {
         </View>
     );
 }
+*/

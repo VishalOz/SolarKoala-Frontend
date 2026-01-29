@@ -5,7 +5,7 @@ Description: Placeholder screen for Account settings
 Last Update: Imandi Vidara - 2026-01-19 - SK005 - Initial creation of account screen
 */
 
-import { View, Text } from "react-native";
+/*import { View, Text } from "react-native";
 
 export default function AccountScreen() {
   return (
@@ -15,4 +15,4 @@ export default function AccountScreen() {
     </View>
   );
 }
-
+*/

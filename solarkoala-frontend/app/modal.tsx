@@ -1,4 +1,4 @@
-import { Link } from 'expo-router';
+/*import { Link } from 'expo-router';
 import { View, Text } from 'react-native';
 
 export default function ModalScreen() {
@@ -11,3 +11,4 @@ export default function ModalScreen() {
     </View>
   );
 }
+*/

@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import { Stack } from 'expo-router';
 import TourFlow from '../features/tour/screens/TourFlow';
 
@@ -10,3 +10,4 @@ export default function TourRoute() {
         </>
     );
 }
+*/
